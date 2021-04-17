@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript Basics</title>
+</head>
+
+<body>
+  <script>
+    `use strict`;
+    let list =
+      `========================
+  現在持っているタスク一覧
+========================`;
+    console.log(list);
+    let task = [`掃除`, `買い物`, `散歩`];
+    for (i = 0; i < task.length; i++) {
+      console.log(`${i}:${task[i]}`);
+    }
+    task.push(prompt("タスクを入力してください"));
+    console.log(list);
+    for (i = 0; i < task.length; i++) {
+      console.log(`${i}:${task[i]}`);
+    }
+    let work = prompt("「確認、追加、削除、終了」の４ついずれかを入力してください");
+
+    
+
+  </script>
+</body>
+
+</html>
